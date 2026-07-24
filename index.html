@@ -3,344 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta
-    name="description"
-    content="Dr. Pratibha Kumari, Assistant Professor in the Department of Data Science and Engineering at IISER Bhopal."
-  >
-
+  <meta name="description" content="Academic website of Dr. Pratibha Kumari, Assistant Professor at IISER Bhopal.">
   <title>Dr. Pratibha Kumari | IISER Bhopal</title>
-
-  <style>
-    :root {
-      --primary: #173b57;
-      --text: #263238;
-      --muted: #607d8b;
-      --background: #f5f7f9;
-      --card: #ffffff;
-      --border: #dfe6eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      background: var(--background);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 44px;
-      padding: 58px 30px;
-      color: white;
-      background: var(--primary);
-    }
-
-    .profile-photo {
-      width: 220px;
-      height: 220px;
-      flex-shrink: 0;
-      object-fit: cover;
-      border: 4px solid white;
-      border-radius: 12px;
-    }
-
-    .profile-info {
-      max-width: 660px;
-      text-align: left;
-    }
-
-    .profile-info h1 {
-      margin: 0 0 8px;
-      font-size: 2.7rem;
-      line-height: 1.2;
-    }
-
-    .profile-info p {
-      margin: 7px 0;
-      font-size: 1.08rem;
-    }
-
-    .profile-info a {
-      color: white;
-    }
-
-    .profile-links {
-      margin-top: 16px;
-    }
-
-    .profile-links a {
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .profile-links a:hover {
-      text-decoration: underline;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      padding: 14px;
-      text-align: center;
-      background: white;
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 0 14px;
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      width: min(960px, 92%);
-      margin: 36px auto;
-    }
-
-    section {
-      margin-bottom: 28px;
-      padding: 28px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    a {
-      color: var(--primary);
-    }
-
-    footer {
-      padding: 28px;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    @media (max-width: 760px) {
-      header {
-        flex-direction: column;
-        gap: 24px;
-        padding: 42px 24px;
-        text-align: center;
-      }
-
-      .profile-photo {
-        width: 180px;
-        height: 180px;
-      }
-
-      .profile-info {
-        text-align: center;
-      }
-
-      .profile-info h1 {
-        font-size: 2.1rem;
-      }
-
-      nav a {
-        margin: 5px 8px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <img
-      src="profile.jpg"
-      alt="Dr. Pratibha Kumari"
-      class="profile-photo"
-    >
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Dr. Pratibha Kumari</a>
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="lab.html">Lab</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="profile-info">
+
+<main>
+  <section class="hero">
+    <img src="profile.jpg" alt="Dr. Pratibha Kumari" class="profile-photo">
+
+    <div>
       <h1>Dr. Pratibha Kumari</h1>
-
-      <p><strong>Assistant Professor</strong></p>
-
-      <p>
+      <p class="role">Assistant Professor</p>
+      <p class="affiliation">
         Department of Data Science and Engineering<br>
         Indian Institute of Science Education and Research Bhopal
       </p>
 
-
-
       <p>
-        <a href="mailto:pratibha@iiserb.ac.in">
-          pratibha@iiserb.ac.in
-        </a>
+        My work focuses on machine learning for evolving data, with interests in
+        continual learning, online and streaming learning, computer vision,
+        medical image analysis, smart agriculture, and multimedia surveillance.
       </p>
 
       <div class="profile-links">
-        <a
-          href="https://scholar.google.com/citations?hl=en&user=gm0ORicAAAAJ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Google Scholar
-        </a>
-        |
-        <a
-          href="https://orcid.org/0000-0003-3681-3700"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ORCID
-        </a>
+        <a href="https://scholar.google.com/citations?hl=en&user=gm0ORicAAAAJ"
+           target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-3681-3700"
+           target="_blank" rel="noopener noreferrer">ORCID</a>
       </div>
     </div>
-  </header>
+  </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#students">Students</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section class="content-card">
+    <h2>Welcome</h2>
+    <p>
+      I am an Assistant Professor in the Department of Data Science and
+      Engineering at IISER Bhopal. Please visit the About and Lab pages for
+      a brief overview of my background and current academic activities.
+    </p>
+  </section>
+</main>
 
-  <main>
-
-    <section id="about">
-      <h2>About Me</h2>
-
-      <p>
-        I am an Assistant Professor in the Department of Data Science and
-        Engineering at the Indian Institute of Science Education and Research
-        Bhopal.
-      </p>
-
-      <p>
-        Prior to joining IISER Bhopal, I worked as a postdoctoral researcher at the University of Regensburg, Germany.
-        I obtained my Ph.D. degree from the Indian Institute of
-        Technology Ropar, India, and my B.Tech. degree from the National
-        Institute of Technology Hamirpur, India.
-      </p>
-
-      <p>
-        My research focuses on developing continual learning, online learning,
-        and streaming machine learning solutions for applications involving
-        evolving data. I am also interested in computer vision, medical image
-        analysis, smart agriculture, and multimedia surveillance.
-      </p>
-    </section>
-
-    <section id="research">
-      <h2>Research Interests</h2>
-
-      <ul>
-        <li>Artificial Intelligence and Machine Learning</li>
-        <li>Continual Learning</li>
-        <li>Online and Streaming Learning</li>
-        <li>Computer Vision</li>
-        <li>Medical Image Analysis</li>
-        <li>Smart Agriculture</li>
-        <li>Multimedia Surveillance</li>
-      </ul>
-    </section>
-
-    <section id="publications">
-      <h2>Publications</h2>
-
-      <p>
-        A complete and up-to-date list of my publications is available through
-        the following academic profiles:
-      </p>
-
-      <ul>
-        <li>
-          <a
-            href="https://scholar.google.com/citations?hl=en&user=gm0ORicAAAAJ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Scholar
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://orcid.org/0000-0003-3681-3700"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ORCID
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching</h2>
-
-      <ul>
-        <li>Introduction to Programming</li>
-        <li>Data Structures and Algorithms</li>
-      </ul>
-    </section>
-
-    <section id="students">
-      <h2>Prospective Students</h2>
-
-      <p>
-        Students interested in research projects or thesis supervision may
-        contact me via email with their CV, academic transcript, and a brief
-        description of their research interests.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:pratibha@iiserb.ac.in">
-          pratibha@iiserb.ac.in
-        </a>
-        <br>
-
-        <strong>Office:</strong> 501, AB-5
-        <br>
-
-        <strong>Department:</strong> Data Science and Engineering
-        <br>
-
-        <strong>Institute:</strong> IISER Bhopal
-        <br>
-
-        <strong>Location:</strong> Bhauri, Bhopal, Madhya Pradesh, India
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    © 2026 Dr. Pratibha Kumari
-  </footer>
-
+<footer>© 2026 Dr. Pratibha Kumari</footer>
 </body>
 </html>

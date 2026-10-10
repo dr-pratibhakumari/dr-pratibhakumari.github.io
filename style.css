@@ -338,3 +338,41 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Homepage highlights */
+.highlights h2 {
+  margin: 0 0 18px;
+}
+
+.highlight-item + .highlight-item {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.highlight-date {
+  margin: 0 0 5px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.highlight-item h3 {
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.highlight-item p:not(.highlight-date) {
+  margin: 0 0 8px;
+}
+
+.highlight-item a {
+  color: var(--primary);
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.highlight-item a:hover {
+  color: var(--primary-dark);
+}

@@ -451,3 +451,54 @@ footer {
     min-height: auto;
   }
 }
+
+/* PRIME 2025 award highlight */
+.prime-card {
+  background: linear-gradient(180deg, #f4fff9 0%, #ffffff 24%);
+}
+
+.prime-card .highlight-media img {
+  border: 1px solid #cfe8dc;
+}
+.prime-card .highlight-badge {
+  color: #176448;
+  background: #daf6e7;
+}
+.prime-preview {
+  margin: 16px 18px 0;
+}
+.prime-preview-inner {
+  min-height: 242px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: linear-gradient(125deg, #184a42 0%, #237c73 64%, #348dab 100%);
+}
+.prime-kicker,
+.prime-source {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #d5f6ec;
+}
+.prime-preview-inner h3 {
+  margin: 14px 0 8px;
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+.prime-preview-inner p {
+  margin: 0 0 14px;
+  line-height: 1.45;
+}
+.highlight-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.highlight-links .button {
+  margin: 4px 0;
+}
